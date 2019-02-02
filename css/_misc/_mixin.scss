@@ -1,0 +1,48 @@
+//===============   Hind   ===============\\
+@mixin hind-light {
+    font:{
+        family: 'Hind', sans-serif;
+        weight: 300;
+        style: normal;
+    }
+}
+@mixin hind-regular {
+    font:{
+        family: 'Hind', sans-serif;
+        weight: 400;
+        style: normal;
+    }
+}
+@mixin hind-medium {
+    font:{
+        family: 'Hind', sans-serif;
+        weight: 500;
+        style: normal;
+    }
+}
+@mixin hind-semibold {
+    font:{
+        family: 'Hind', sans-serif;
+        weight: 600;
+        style: normal;
+    }
+}
+@mixin hind-bold {
+    font:{
+        family: 'Hind', sans-serif;
+        weight: 700;
+        style: normal;
+    }
+}
+
+//===============   Montserrat   ===============\\
+@mixin montserrat-bold {
+    font:{
+        family: 'Montserrat', sans-serif;
+        weight: 700;
+        style: normal;
+    }
+}
+
+//===============   Opensans   ===============\\
+@mixin mrssaint { font-family: 'Mrs_SaintDelafield', sans-serif; }

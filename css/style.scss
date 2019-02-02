@@ -1,0 +1,24 @@
+@import '_misc/_mixin.scss';
+@import '_misc/_theme.scss';
+
+p {
+    @include hind-medium;
+}
+span {
+    @include mrssaint;
+}
+.background {
+    background: $background-color;
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    .content {  
+        background: $content-color;
+        color: $gray-text;
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        text-transform: uppercase;
+        @include montserrat-bold;
+    }
+}

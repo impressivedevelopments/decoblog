@@ -1,0 +1,84 @@
+/*  FONT-AWESOME ICONS
+
+Hamburger menu
+<i class="fas fa-bars"></i>
+
+Rss
+<i class="fas fa-rss"></i>
+
+Twitter 
+<i class="fab fa-twitter"></i>
+
+Tumbler
+<i class="fab fa-tumblr"></i>
+
+Facebook
+<i class="fab fa-facebook-f"></i>
+
+Search
+<i class="fas fa-search"></i>
+
+Arrow-up
+<i class="fas fa-long-arrow-alt-up"></i>
+
+Arrow-down
+<i class="fas fa-long-arrow-alt-down"></i>
+
+Pen
+<i class="fas fa-pen-square"></i>
+
+Image
+<i class="fas fa-image"></i>
+
+Link
+<i class="fas fa-link"></i>
+
+Film
+<i class="fas fa-film"></i>
+
+Comment
+<i class="far fa-comments"></i>
+
+Dribbble
+<i class="fab fa-dribbble"></i>
+
+Music
+<i class="fas fa-music"></i>
+
+Squares*4
+<i class="fas fa-th-large"></i>
+
+Like
+<i class="far fa-heart"></i>
+
+User
+<i class="fas fa-user"></i>
+
+Calendar
+<i class="far fa-calendar-alt"></i>
+
+Star
+<i class="fas fa-star"></i>
+
+Tags
+<i class="fas fa-tags"></i>
+
+Arrow-right
+<i class="fas fa-long-arrow-alt-right"></i>
+
+Arrow-left
+<i class="fas fa-long-arrow-alt-left"></i>
+
+Pinterest
+<i class="fab fa-pinterest"></i>
+
+Home
+<i class="fas fa-home"></i>
+
+Mail
+<i class="far fa-envelope"></i>
+
+Earth
+<i class="fas fa-globe-asia"></i>
+
+*/
