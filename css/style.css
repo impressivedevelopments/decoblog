@@ -7,7 +7,15 @@
   color: #ffffff;
 }
 
+.about-tweets {
+  font-size: 0.9rem;
+}
+
 .about-twitt {
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.93rem;
   padding-top: 0.625rem;
   padding-bottom: 1.875rem;
   padding-left: 1.1rem;
@@ -20,12 +28,17 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: #ffffff;
-  width: 360px;
-  height: 200px;
+  width: 22.5rem;
+  height: 12.5rem;
+}
+
+.about-latest-comment {
+  font-size: 0.875rem;
+  font-family: 'Mrs_SaintDelafield', sans-serif;
 }
 
 .about-comment {
-  padding: 15px 0px;
+  padding: 0.93rem 0rem;
   border-bottom: 1px solid #65676a;
 }
 
@@ -36,8 +49,8 @@
 .about .instagram-post {
   border-right: 1px solid #000;
   border-bottom: 1px solid #000;
-  width: 120px;
-  height: 100px;
+  width: 7.5rem;
+  height: 6.25rem;
 }
 
 .about .instagram-post:nth-child(2n) {
@@ -90,11 +103,6 @@
   background: #3a3c49 url("/images/sign.png") no-repeat bottom 15px right 15px;
 }
 
-.about .sign span {
-  color: #b4b4b4;
-  font-family: 'Mrs_SaintDelafield', sans-serif;
-}
-
 /* FOOTER */
 .footer {
   background: #17191c;
@@ -105,8 +113,8 @@
 .footer a {
   text-decoration: none;
   color: #858687;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
 }
 
 .footer a:hover {

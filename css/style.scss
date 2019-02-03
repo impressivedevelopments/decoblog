@@ -9,7 +9,12 @@
     &-twitter-name, &-comment-name {
         color:$white;
     }
+    &-tweets {
+        font-size: 0.9rem;
+    }
     &-twitt {
+        @include hind-light;
+        font-size: 0.93rem;
         padding: {
             top: 0.625rem;
             bottom: 1.875rem;
@@ -20,11 +25,15 @@
         display: flex;
         flex-wrap: wrap;
         background: $white;
-        width: 360px;
-        height: 200px;
+        width: 22.5rem;
+        height: 12.5rem;
+    }
+    &-latest-comment {
+        font-size: 0.875rem;
+        @include mrssaint;
     }
     &-comment {
-        padding: 15px 0px;
+        padding: 0.93rem 0rem;
         border-bottom: 1px solid $gray;
     }
     &-comment:last-child {
@@ -36,8 +45,8 @@
             right: 1px solid #000;
             bottom: 1px solid #000;
         } 
-        width: 120px;
-        height: 100px;
+        width: 7.5rem;
+        height: 6.25rem;
     }
     .instagram-post:nth-child(2n) {
         border: {
@@ -91,12 +100,7 @@
         margin-bottom: 3.75rem;
         position: relative;
         background: #3a3c49 url('/images/sign.png') no-repeat bottom 15px right 15px;
-        span { 
-            color: $gray-text;
-            @include mrssaint;
-        }
     }
-
 }
 
 /* FOOTER */
@@ -109,8 +113,8 @@
         text-decoration: none;
         color: $footer-text;
         margin: {
-            left: 10px;
-            right:10px;
+            left: 0.6rem;
+            right: 0.6rem;
         }
     &:hover {
         text-decoration: none;
