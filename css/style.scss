@@ -4,10 +4,79 @@
 
 /* ABOUT US */
 
-.about-us {
+.about {
     background: $background-color;
+    &-twitter-name, &-comment-name {
+        color:$white;
+    }
+    &-twitt {
+        padding: {
+            top: 0.625rem;
+            bottom: 1.875rem;
+            left: 1.1rem;
+        }
+    }
+    &-instagram .instagram-photo {
+        display: flex;
+        flex-wrap: wrap;
+        background: $white;
+        width: 360px;
+        height: 200px;
+    }
+    &-comment {
+        padding: 15px 0px;
+        border-bottom: 1px solid $gray;
+    }
+    &-comment:last-child {
+        border-bottom: none;
+    }
+
+    .instagram-post {
+        border: {
+            right: 1px solid #000;
+            bottom: 1px solid #000;
+        } 
+        width: 120px;
+        height: 100px;
+    }
+    .instagram-post:nth-child(2n) {
+        border: {
+            right: 1px solid #000;
+            bottom: 1px solid #000;
+        } 
+    }
+    .instagram-post:nth-child(3n) {
+        border: {
+            right: none;
+            bottom: 1px solid #000;
+        } 
+    }
+    .instagram-post:nth-child(5) {
+        border: {
+            right: 1px solid #000;
+            bottom: none;
+        } 
+    }
+    .instagram-post:nth-child(4) {
+        border: {
+            right: 1px solid #000;
+            bottom: none;
+        } 
+    }
+    .instagram-post:nth-child(6) {
+        border: {
+            right: none;
+            bottom: none;
+        } 
+    }
+    
+
+    .fa-twitter {
+        color:$white;
+    }
     h6 {
         color:$white;
+        text-transform: uppercase;
         @include montserrat-bold;
         margin: {
             top: 3.75rem;
@@ -18,32 +87,17 @@
         color:$white;
     }
     .sign {
-        width: 22.5rem;
         height: 9.375rem;
-        background: #3a3c49;
         margin-bottom: 3.75rem;
         position: relative;
+        background: #3a3c49 url('/images/sign.png') no-repeat bottom 15px right 15px;
         span { 
             color: $gray-text;
             @include mrssaint;
         }
-        img { 
-            position: absolute;
-            bottom: 1rem;
-            right: 1rem;
-        }
     }
 
 }
-
-
-
-
-
-
-
-
-
 
 /* FOOTER */
 

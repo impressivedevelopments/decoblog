@@ -1,10 +1,77 @@
 /* ABOUT US */
-.about-us {
+.about {
   background: #212429;
 }
 
-.about-us h6 {
+.about-twitter-name, .about-comment-name {
   color: #ffffff;
+}
+
+.about-twitt {
+  padding-top: 0.625rem;
+  padding-bottom: 1.875rem;
+  padding-left: 1.1rem;
+}
+
+.about-instagram .instagram-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #ffffff;
+  width: 360px;
+  height: 200px;
+}
+
+.about-comment {
+  padding: 15px 0px;
+  border-bottom: 1px solid #65676a;
+}
+
+.about-comment:last-child {
+  border-bottom: none;
+}
+
+.about .instagram-post {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  width: 120px;
+  height: 100px;
+}
+
+.about .instagram-post:nth-child(2n) {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.about .instagram-post:nth-child(3n) {
+  border-right: none;
+  border-bottom: 1px solid #000;
+}
+
+.about .instagram-post:nth-child(5) {
+  border-right: 1px solid #000;
+  border-bottom: none;
+}
+
+.about .instagram-post:nth-child(4) {
+  border-right: 1px solid #000;
+  border-bottom: none;
+}
+
+.about .instagram-post:nth-child(6) {
+  border-right: none;
+  border-bottom: none;
+}
+
+.about .fa-twitter {
+  color: #ffffff;
+}
+
+.about h6 {
+  color: #ffffff;
+  text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -12,27 +79,20 @@
   margin-bottom: 2.8rem;
 }
 
-.about-us p {
+.about p {
   color: #ffffff;
 }
 
-.about-us .sign {
-  width: 22.5rem;
+.about .sign {
   height: 9.375rem;
-  background: #3a3c49;
   margin-bottom: 3.75rem;
   position: relative;
+  background: #3a3c49 url("/images/sign.png") no-repeat bottom 15px right 15px;
 }
 
-.about-us .sign span {
+.about .sign span {
   color: #b4b4b4;
   font-family: 'Mrs_SaintDelafield', sans-serif;
-}
-
-.about-us .sign img {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
 }
 
 /* FOOTER */
