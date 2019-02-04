@@ -1,3 +1,7 @@
+html, body {
+  background-color: #f1f1f1 !important;
+}
+
 /* Helper class */
 .grid {
   display: -ms-grid;
@@ -33,11 +37,60 @@
           justify-content: flex-end;
 }
 
+/* SLIDER */
 .slider {
   margin-top: -18.125rem;
   z-index: 1;
 }
 
+/* SIGN UP */
+.sign-up {
+  height: 11.25rem;
+  padding: 2rem;
+}
+
+.sign-up h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 1.25rem;
+}
+
+.sign-up input {
+  border: #ffffff;
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9rem;
+  padding: .5rem 1.75rem;
+  width: 100%;
+  outline-color: #212121;
+}
+
+.sign-up button {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  background: #212121;
+  color: #ffffff;
+  padding: .6rem 1.75rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.sign-up button:hover {
+  background: #ffffff;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  color: #212121;
+  border: 1px solid #212121;
+}
+
+/* POSTS */
 /* ABOUT US */
 .about {
   background: #212429;

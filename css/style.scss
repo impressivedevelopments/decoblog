@@ -1,13 +1,16 @@
 @import '_misc/_mixin.scss';
 @import '_misc/_theme.scss';
 
+html, body {
+    background-color: #f1f1f1 !important;
+}
+
 /* Helper class */
 
 .grid { display: grid; }
 
 /* HEADER */
 .header {
-    //height: 51.5rem;
     &-top-menu {
         background: $background-color;
         position: relative;
@@ -35,10 +38,52 @@
         
     }
 }
+/* SLIDER */
+
 .slider {
     margin-top: -18.125rem;
     z-index: 1;
 }
+/* SIGN UP */
+.sign-up {
+    height: 11.25rem;
+    padding: 2rem;
+    h3 {
+        @include montserrat-bold;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        font-size: 1.25rem;
+    }
+    input {
+        border:$white;
+        @include hind-light;
+        font-size: 0.9rem;
+        padding: .5rem 1.75rem;
+        width: 100%;
+        outline-color: $black;
+    }
+    button {
+        @include hind-medium;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        background: $black;
+        color: $white;
+        padding: .6rem 1.75rem;
+        border: 1px solid transparent;
+        cursor: pointer;
+        &:hover {
+            background: $white;
+            transition: .5s ease;
+            color: $black;
+            border: 1px solid $black;
+        }
+    }
+}
+
+/* POSTS */
+
+
+
 /* ABOUT US */
 
 .about {
