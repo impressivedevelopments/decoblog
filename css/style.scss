@@ -1,7 +1,12 @@
 @import '_misc/_mixin.scss';
 @import '_misc/_theme.scss';
 
+/* Helper class */
+
+.grid { display: grid; }
+
 /* HEADER */
+
 .header {
     background: $background-color;
     height: 21.5rem;
@@ -39,10 +44,8 @@
         }
     }
     &-instagram .instagram-photo {
-        display: flex;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(3, 1fr);
         background: $white;
-        width: 22.5rem;
         height: 12.5rem;
     }
     &-latest-comment {
@@ -62,9 +65,8 @@
             right: 1px solid #000;
             bottom: 1px solid #000;
         } 
-        width: 7.5rem;
-        height: 6.25rem;
     }
+    
     .instagram-post:nth-child(2n) {
         border: {
             right: 1px solid #000;
