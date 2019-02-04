@@ -1,3 +1,9 @@
+/* Helper class */
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
 /* HEADER */
 .header {
   background: #212429;
@@ -5,20 +11,22 @@
 }
 
 .header-nav-item a {
-  color: #ffffff;
   border-left: 1px solid #65676a;
   padding: 1rem 1.25rem;
   line-height: 3rem;
 }
 
+.header .fas, .header .fab {
+  color: #ffffff;
+}
+
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-/* Helper class */
-.grid {
-  display: -ms-grid;
-  display: grid;
 }
 
 /* ABOUT US */

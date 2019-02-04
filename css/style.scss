@@ -11,16 +11,19 @@
     background: $background-color;
     height: 21.5rem;
     &-nav-item a {
-        color: $white;
         border: {
             left: 1px solid $gray;
         }
         padding: 1rem 1.25rem;
         line-height: 3rem;
     }
+    .fas, .fab {
+        color: $white;
+    }
 
 }
 .nav {
+    display: flex;
     justify-content: flex-end;
 }
 

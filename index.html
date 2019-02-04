@@ -14,12 +14,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-xs-4 text-left">
-                    <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                    <ul class="nav dropdown-menu">
-                        <li>Главная</li>
-                        <li>Главя</li>
-                        <li>Главя</li>
-                    </ul>
+                    <div class="dropdown">
+                        <a href="#" id="one" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-bars"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="one">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-xs-4 text-center">
                     <img src="" alt="logo">
@@ -115,7 +119,7 @@
             &copy;2015 copyright .all right reserved by awesome theme &nbsp;&nbsp; | <a href="#">terms policy</a> | <a href="#">disclaimer</a>
     </div>
 </footer>
-
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
