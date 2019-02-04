@@ -1,13 +1,30 @@
 @import '_misc/_mixin.scss';
 @import '_misc/_theme.scss';
 
+/* HEADER */
+.header {
+    background: $background-color;
+    height: 21.5rem;
+    &-nav-item a {
+        color: $white;
+        border: {
+            left: 1px solid $gray;
+        }
+        padding: 1rem 1.25rem;
+        line-height: 3rem;
+    }
+
+}
+.nav {
+    justify-content: flex-end;
+}
 
 /* ABOUT US */
 
 .about {
     background: $background-color;
     &-twitter-name, &-comment-name {
-        color:$white;
+        color: $white;
     }
     &-tweets {
         font-size: 0.9rem;

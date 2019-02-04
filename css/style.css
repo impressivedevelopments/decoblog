@@ -1,3 +1,22 @@
+/* HEADER */
+.header {
+  background: #212429;
+  height: 21.5rem;
+}
+
+.header-nav-item a {
+  color: #ffffff;
+  border-left: 1px solid #65676a;
+  padding: 1rem 1.25rem;
+  line-height: 3rem;
+}
+
+.nav {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 /* ABOUT US */
 .about {
   background: #212429;
