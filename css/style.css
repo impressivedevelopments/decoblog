@@ -91,6 +91,60 @@ html, body {
 }
 
 /* POSTS */
+.post-card {
+  position: relative;
+  padding: 1.25rem 1.25rem;
+}
+
+.post-card-header {
+  text-align: center;
+}
+
+.post-card-header .wrap {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.post-card-body {
+  text-align: center;
+}
+
+.post-card-body h6 {
+  color: #65676a;
+  text-transform: uppercase;
+}
+
+.post-card-body h3 {
+  text-transform: uppercase;
+}
+
+.white {
+  background: #ffffff;
+}
+
+.white .wrap {
+  color: #212121;
+}
+
+.white h3 {
+  color: #212121;
+}
+
+.black {
+  background: #212121;
+}
+
+.black .wrap {
+  color: #ffffff;
+}
+
+.black h3 {
+  color: #ffffff;
+}
+
 /* ABOUT US */
 .about {
   background: #212429;

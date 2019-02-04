@@ -38,12 +38,13 @@ html, body {
         
     }
 }
-/* SLIDER */
 
+/* SLIDER */
 .slider {
     margin-top: -18.125rem;
     z-index: 1;
 }
+
 /* SIGN UP */
 .sign-up {
     height: 11.25rem;
@@ -81,8 +82,51 @@ html, body {
 }
 
 /* POSTS */
+.post-card {
+    position: relative;
+    padding: 1.25rem 1.25rem;
+    &-header {
+        text-align: center;
+        .wrap {
+            position: absolute;
+            top: -20px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+    &-body {
+        text-align: center;
+        h6 { 
+            color: $gray;
+            text-transform: uppercase;
+        }
+        h3 {
+            text-transform: uppercase;
+        }
+    }
+    &-footer {
 
-
+    }
+}
+.white {
+    background: $white;
+    .wrap {
+        color: $black;
+    }
+    h3 {
+        color: $black;
+    }
+}
+.black {
+    background: $black;
+    .wrap {
+        color: $white;
+    }
+    h3 {
+        color: $white;
+    }
+}
 
 /* ABOUT US */
 
