@@ -1,3 +1,9 @@
+/* Helper class */
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
 /* ABOUT US */
 .about {
   background: #212429;
@@ -22,13 +28,9 @@
 }
 
 .about-instagram .instagram-photo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   background: #ffffff;
-  width: 22.5rem;
   height: 12.5rem;
 }
 
@@ -49,8 +51,6 @@
 .about .instagram-post {
   border-right: 1px solid #000;
   border-bottom: 1px solid #000;
-  width: 7.5rem;
-  height: 6.25rem;
 }
 
 .about .instagram-post:nth-child(2n) {
