@@ -5,28 +5,37 @@
 }
 
 /* HEADER */
-.header {
+.header-top-menu {
   background: #212429;
+  position: relative;
   height: 21.5rem;
 }
 
-.header-nav-item a {
-  border-left: 1px solid #65676a;
-  padding: 1rem 1.25rem;
-  line-height: 3rem;
-}
-
-.header .fas, .header .fab {
+.header-top-menu .fas, .header-top-menu .fab {
   color: #ffffff;
+  border-left: 1px solid #65676a;
+  padding: 0.75rem 1.35rem;
+  line-height: 2rem;
 }
 
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.header-top-menu .fa-bars {
+  border-right: 1px solid #65676a;
+  border-left: none;
+}
+
+.header-top-menu .logo {
+  margin-top: 1.25rem;
+}
+
+.header-top-menu .nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.slider {
+  margin-top: -18.125rem;
+  z-index: 1;
 }
 
 /* ABOUT US */

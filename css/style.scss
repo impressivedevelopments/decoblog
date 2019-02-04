@@ -6,27 +6,39 @@
 .grid { display: grid; }
 
 /* HEADER */
-
 .header {
-    background: $background-color;
-    height: 21.5rem;
-    &-nav-item a {
-        border: {
-            left: 1px solid $gray;
+    //height: 51.5rem;
+    &-top-menu {
+        background: $background-color;
+        position: relative;
+        height: 21.5rem;
+        .fas, .fab {
+            color: $white;
+            border: {
+                left: 1px solid $gray;
+            }
+            padding: 0.75rem 1.35rem;
+            line-height: 2rem;
         }
-        padding: 1rem 1.25rem;
-        line-height: 3rem;
+        .fa-bars {
+            border: {
+                right: 1px solid $gray;
+                left: none;
+            }
+        }
+        .logo {
+            margin-top: 1.25rem;
+        }
+        .nav {
+            justify-content: flex-end;
+        }
+        
     }
-    .fas, .fab {
-        color: $white;
-    }
-
 }
-.nav {
-    display: flex;
-    justify-content: flex-end;
+.slider {
+    margin-top: -18.125rem;
+    z-index: 1;
 }
-
 /* ABOUT US */
 
 .about {
