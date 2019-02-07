@@ -450,4 +450,10 @@ input::placeholder, button {
   text-decoration: none;
   color: #ffffff;
 }
+
+/* ADMIN PANEL */
+.admin-panel {
+  width: 40rem;
+  margin: 15rem auto;
+}
 /*# sourceMappingURL=style.css.map */
