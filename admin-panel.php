@@ -1,7 +1,7 @@
 <?php
 require_once "lib/db-connection.php";
 
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $category = $_POST['category'];
     $title = $_POST['title'];
     $author = $_POST['author'];
