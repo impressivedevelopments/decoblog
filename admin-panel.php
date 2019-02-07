@@ -74,7 +74,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="row">
                             <div class="form-group col-lg-6">
                                 <label class="control-label">Add file</label>
-                                <input id="file" type="file" name="file" class="form-control-file">
+                                <input id="file" accept="image/*" type="file" name="file" class="form-control-file">
                             </div>
                             <div class="form-group col-lg-3 offset-3 text-right">
                                 <button id="add-news-to-db" class="btn btn-block btn-success" type="submit">Add</button>

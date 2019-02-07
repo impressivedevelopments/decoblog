@@ -92,6 +92,7 @@ input::placeholder, button {
 }
 
 .post-card {
+    margin-bottom: 10px;
     &-image {
         height: 16rem;
         background: $light-gray;

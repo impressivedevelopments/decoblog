@@ -127,6 +127,7 @@ input::placeholder, button {
 }
 
 .post-card {
+  margin-bottom: 10px;
   border: 1px solid #f1f1f1;
 }
 
