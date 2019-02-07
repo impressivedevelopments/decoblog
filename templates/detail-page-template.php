@@ -89,10 +89,10 @@
 
     <div class="col-lg-3">
         <div class="sidebar">
-            <div class="search">    
+            <div class="search">
                 <input type="text" placeholder="search">
                 <i class="fas fa-search"></i>
-            </div>
+            </div>  
             <img class="d-block w-100" src="images/categories.png" alt="img">            
             <h4>categories</h4>
             <ul class="categories">
@@ -149,14 +149,37 @@
                 </li>
             </ul>
             <div class="social">
-                <span>
+                    <span class="flex">
                     <i class="fab fa-dribbble"></i>
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-pinterest"></i>
-                </span>
+                    </span>
             </div>
-            <img src="images/social.png">
+            <div class="sidebar-slider">
+                <div id="sidebarsliderControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/banner-2.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="images/banner-2.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="images/banner-2.png" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#sidebarsliderControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#sidebarsliderControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <img class="d-block w-100" src="images/social.png">
         </div>
     </div>
 </div>
