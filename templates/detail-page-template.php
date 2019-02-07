@@ -89,9 +89,13 @@
 
     <div class="col-lg-3">
         <div class="sidebar">
-            <div class="search">
-                <input type="text" placeholder="search">
-                <i class="fas fa-search"></i>
+            <div class="input-group mb-2 mr-sm-2 search">
+                <input type="text" class="form-control" placeholder="search">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
             </div>  
             <img class="d-block w-100" src="images/categories.png" alt="img">            
             <h4>categories</h4>

@@ -185,13 +185,13 @@ input::placeholder, button {
 .sidebar {
     background: $white;
     padding: 2rem 2rem;   
-    .search {
-        position: relative;
-        i {
-            position: absolute;
-            top: 0;
-            right: 1rem;
-            line-height: 2.6rem;
+    .input-group {
+        &-text {
+            background: $black;
+            color: $white;
+        }
+        .form-control {
+            outline: none;
         }
     }
     input {
@@ -207,7 +207,12 @@ input::placeholder, button {
         margin: 2rem 0 1rem 0;
         text-align: center;
     }
-}
+    &:hover {
+        transition: .5s ease;
+        box-shadow: 0px 3px 25.52px 3.48px rgba(112, 112, 112, 0.49);
+    }
+} 
+
 .categories {
     margin-bottom: 2rem;
     padding: 0;
@@ -367,4 +372,10 @@ input::placeholder, button {
         color: $white;
         }
     }
+}
+
+/* ADMIN PANEL 1*/
+.admin-panel {
+   width: 40rem;
+   margin: 15rem auto;
 }

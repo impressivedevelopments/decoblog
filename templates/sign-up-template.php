@@ -2,7 +2,7 @@
 require_once "lib/db-connection.php";
 
 $to = $_POST['email']; 
-// емайл получателя 
+// емайл получателя
 
 $subject = "Проверка отправки писем"; 
 // тема письма 
@@ -20,7 +20,6 @@ $mailheaders .= "From: suncheus@yandex.ru";
 
 mail($to, $subject, $message, $mailheaders);
 // отправка письма
-
 ?>
 
 <form class="sign-up" action="" method="post">
