@@ -1,15 +1,18 @@
 <?php
 require_once "lib/db-connection.php";
 
-if($_SERVER['REQUEST_METHOD'] == 'post') {
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $category = $_POST['category'];
     $title = $_POST['title'];
     $author = $_POST['author'];
     $description = $_POST['description'];
     $date = date("L.d.Y");
 
-    $result = $con->query("INSERT INTO posts category, title, author, description 
+    $result = $con->query("INSERT INTO posts (category, title, author, description) 
                             values('$category', '$title', '$author', '$description')");
+
+    header("location: admin-panel.php");
+    exit();
 };
 
 ?>
