@@ -1,4 +1,3 @@
-
 <div class="row">
     <div class="col-lg-9">
         <div class="post-card white">
@@ -152,7 +151,7 @@
                     </div>                    
                 </li>
             </ul>
-            <div class="social">
+            <div class="sidebar-social">
                     <span class="flex">
                     <i class="fab fa-dribbble"></i>
                     <i class="fab fa-facebook-f"></i>

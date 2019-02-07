@@ -1,25 +1,29 @@
 <?php
 require_once "lib/db-connection.php";
+$title = $_SERVER['PHP_SELF'];
+if(isset($_POST['email'])) {
+    $to = $_POST['email']; 
+    // емайл получателя
 
-$to = $_POST['email']; 
-// емайл получателя
+    $subject = "Проверка отправки писем"; 
+    // тема письма 
 
-$subject = "Проверка отправки писем"; 
-// тема письма 
+    $message = "Здравствуйте
+                Если вы читаете это письмо значит все ок
+                Почтовый робот"; 
+    // текст сообщения 
 
-$message = "Здравствуйте
-            Если вы читаете это письмо значит все ок
-            Почтовый робот"; 
-// текст сообщения 
+    $mailheaders = "Content-type:text/plain;charset=windows-1251rn"; 
+    // почтовый заголовок, указывает формат письма - текстовый и кодировку
 
-$mailheaders = "Content-type:text/plain;charset=windows-1251rn"; 
-// почтовый заголовок, указывает формат письма - текстовый и кодировку
+    $mailheaders .= "From: suncheus@yandex.ru"; 
+    // почтовый заголовок, указывает емайл отправителя
 
-$mailheaders .= "From: suncheus@yandex.ru"; 
-// почтовый заголовок, указывает емайл отправителя
-
-mail($to, $subject, $message, $mailheaders);
-// отправка письма
+    mail($to, $subject, $message, $mailheaders);
+    // отправка письма
+    header("location: $title");
+    exit();
+}
 ?>
 
 <form class="sign-up" action="" method="post">

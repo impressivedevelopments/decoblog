@@ -34,6 +34,10 @@ input::placeholder, button {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 /* HEADER */
 .header-top-menu {
   background: #212429;
@@ -261,7 +265,7 @@ input::placeholder, button {
 }
 
 .sidebar .input-group .form-control {
-  outline: none;
+  outline: transparent;
 }
 
 .sidebar input {
@@ -288,23 +292,23 @@ input::placeholder, button {
           box-shadow: 0px 3px 25.52px 3.48px rgba(112, 112, 112, 0.49);
 }
 
-.categories {
+.sidebar .categories {
   margin-bottom: 2rem;
   padding: 0;
   list-style: none;
 }
 
-.categories li {
+.sidebar .categories li {
   text-transform: uppercase;
   padding: .6rem 0;
   border-top: 1px solid #d7d7d7;
 }
 
-.categories li span {
+.sidebar .categories li span {
   float: right;
 }
 
-.last-posts li {
+.sidebar .last-posts li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,25 +316,25 @@ input::placeholder, button {
   border-top: 1px solid #d7d7d7;
 }
 
-.last-posts .last-post-img {
+.sidebar .last-posts .last-post-img {
   background: #f1f1f1;
   width: 125px;
   height: 75px;
   margin-right: 1rem;
 }
 
-.last-posts li:hover {
+.sidebar .last-posts li:hover {
   -webkit-transition: .5s ease;
   transition: .5s ease;
   -webkit-box-shadow: 0px 3px 25.52px 3.48px rgba(112, 112, 112, 0.49);
           box-shadow: 0px 3px 25.52px 3.48px rgba(112, 112, 112, 0.49);
 }
 
-.social {
+.sidebar-social {
   margin: 2rem 0rem;
 }
 
-.social span {
+.sidebar-social span {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -457,8 +461,27 @@ input::placeholder, button {
 }
 
 /* ADMIN PANEL 1*/
-.admin-panel {
+.admin-form {
   width: 40rem;
   margin: 15rem auto;
+}
+
+.panel {
+  background: #ffffff;
+  padding: 2rem;
+}
+
+.panel:hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-box-shadow: 0px 3px 25.52px 3.48px rgba(112, 112, 112, 0.49);
+          box-shadow: 0px 3px 25.52px 3.48px rgba(112, 112, 112, 0.49);
+}
+
+.admin-header {
+  background: url("/images/pattern.png") center no-repeat cover;
+  height: 100px;
+  text-align: center;
+  margin: 2rem auto 3rem;
 }
 /*# sourceMappingURL=style.css.map */
