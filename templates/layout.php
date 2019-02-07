@@ -20,17 +20,11 @@
     <?= include_template("templates/slider-template.php", []) ?>
 </div>
     
-    <!-- SGIN-UP -->
-<form class="sign-up">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-2 my-auto"><h3>Signup to <br> Newsletter</h3></div>
-            <div class="col-lg-4 my-auto"><input type="text" placeholder="YOUR NAME"></div>
-            <div class="col-lg-4 my-auto"><input type="e-mail" placeholder="YOUR E-MAIL ADRESS"></div>
-            <div class="col-lg-2 my-auto"><button class="btn-block">Subscibe now</button></div>
-        </div>
-    </div>
-</form>
+    <!-- SIGN-UP -->
+<div class="container-fluid">
+    <?= include_template("templates/sign-up-template.php", []) ?>
+</div>
+
 
     <!-- POSTS -->
 <div class="container-fluid">
