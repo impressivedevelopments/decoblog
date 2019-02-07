@@ -6,10 +6,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $title = $_POST['title'];
     $author = $_POST['author'];
     $description = $_POST['description'];
-    $date = date("L.d.Y");
+    $date = date("Y-m-d H:i:s");
 
-    $result = $con->query("INSERT INTO posts (category, title, author, description) 
-                            values('$category', '$title', '$author', '$description')");
+    $result = $con->query("INSERT INTO posts (category, title, author, description, date) 
+                            values('$category', '$title', '$author', '$description', '$date')");
 
     header("location: admin-panel.php");
     exit();
