@@ -38,7 +38,7 @@ $posts = $con->query("SELECT * FROM posts");
                         </span>
                     </h6>
                     <p><?= $post['description']; ?></p>
-                    <a href="detail-page.php"><button class="post-card-button">Read More</button></a>
+                    <form method="POST" action="detail-page.php?id=<?=$post['id']?>"><button class="post-card-button" name="id">Read More</button></form>
                 </div>
                 <div class="post-card-footer">
                     <span>

@@ -25,7 +25,6 @@
     <?= include_template("templates/sign-up-template.php", []) ?>
 </div>
 
-
     <!-- POSTS -->
 <div class="container-fluid">
     <?= $content; ?>

@@ -1,3 +1,9 @@
+<?php 
+require_once "lib/db-connection.php";
+
+$posts = $con->query("SELECT * FROM posts where id = '{$_GET['id']}'");
+$post = $posts->fetch_assoc();
+?>
 <div class="row">
     <div class="col-lg-9">
         <div class="post-card white">
@@ -10,64 +16,19 @@
                     <i class="fas fa-image fa-3x"></i>
                 </span>
             </div>
-                <h6>Travelling</h6>
-                <h3>Travel besT Adventure</h3>
+                <h6><?= $post['category']; ?></h6>
+                <h3><?= $post['title']; ?></h3>
                 <h6>
-                    <span>
-                        <i class="fas fa-user"></i>Name 
-                    </span>
-                    <span>
-                        <i class="far fa-calendar-alt"></i><?= date('F.d.Y'); ?>
-                    </span>
-                </h6>
-                <p>Lorem ipsum doloirs sit amet, csatetur
-                        adipisicin, sed does eiusmod tehampor 
-                        incididunt uts laboasre et dolhvaliqua.
-                        Ut enim  vem, nostrasuaations ullamco
-                        labiosi ut saaliquip exoi asea comoodo
-                        Disco choice is the have great work.
-                        Lorem ipsum doloirs sit amet, csatetur
-                        adipisicin, sed does eiusmod tehampor 
-                        incididunt uts laboasre et dolhvaliqua.
-                        Ut enim  vem, nostrasuaations ullamco
-                        labiosi ut saaliquip exoi asea comoodo
-                        Disco choice is the have great work.
-                        Lorem ipsum doloirs sit amet, csatetur
-                        adipisicin, sed does eiusmod tehampor 
-                        incididunt uts laboasre et dolhvaliqua.
-                        Ut enim  vem, nostrasuaations ullamco
-                        labiosi ut saaliquip exoi asea comoodo
-                        Disco choice is the have great work.
-                        Lorem ipsum doloirs sit amet, csatetur
-                        adipisicin, sed does eiusmod tehampor 
-                        incididunt uts laboasre et dolhvaliqua.
-                        Ut enim  vem, nostrasuaations ullamco
-                        labiosi ut saaliquip exoi asea comoodo
-                        Disco choice is the have great work.
-                        Lorem ipsum doloirs sit amet, csatetur
-                        adipisicin, sed does eiusmod tehampor 
-                        incididunt uts laboasre et dolhvaliqua.
-                        Ut enim  vem, nostrasuaations ullamco
-                        labiosi ut saaliquip exoi asea comoodo
-                        Disco choice is the have great work.
-                        Lorem ipsum doloirs sit amet, csatetur
-                        adipisicin, sed does eiusmod tehampor 
-                        incididunt uts laboasre et dolhvaliqua.
-                        Ut enim  vem, nostrasuaations ullamco
-                        labiosi ut saaliquip exoi asea comoodo
-                        Disco choice is the have great work.
-                        Lorem ipsum doloirs sit amet, csatetur
-                        adipisicin, sed does eiusmod tehampor 
-                        incididunt uts laboasre et dolhvaliqua.
-                        Ut enim  vem, nostrasuaations ullamco
-                        labiosi ut saaliquip exoi asea comoodo
-                        Disco choice is the have great work.
-                        Lorem ipsum doloirs sit amet, csatetur
-                        adipisicin, sed does eiusmod tehampor 
-                        incididunt uts laboasre et dolhvaliqua.
-                        Ut enim  vem, nostrasuaations ullamco
-                        labiosi ut saaliquip exoi asea comoodo
-                        Disco choice is the have great work.</p>
+                        <i class="fas fa-user"></i>
+                        <span class="author">
+                            <?= $post['author']; ?> 
+                        </span>
+                        <i class="far fa-calendar-alt"></i>
+                        <span>
+                            <?= date('F.d.Y'); ?>
+                        </span>
+                    </h6>
+                <p><?= $post['description']; ?></p>
             </div>
             <div class="post-card-footer">
                 <span>
@@ -85,7 +46,6 @@
             </div>
         </div>
     </div>
-
     <div class="col-lg-3">
         <div class="sidebar">
             <div class="input-group mb-2 mr-sm-2 search">
