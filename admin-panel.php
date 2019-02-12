@@ -1,6 +1,11 @@
 <?php
 require_once "lib/db-connection.php";
-
+require_once "lib/template.php";
+session_start();
+if ($_SESSION['login'] != 'admin')
+{
+    header("location: index.php");
+}
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $category = $_POST['category'];
     $title = $_POST['title'];
@@ -27,7 +32,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Admin Panel</title>
 </head>
 <body>
-<div class="container-fluid">
+<header class="header">
+    <?= include_template("templates/header-template.php", []) ?>
+    <div class="container-fluid admin">
     <div class="row">
         <div class="admin-header">
             <h2>Admin Panel</h2>
@@ -49,7 +56,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </div>
                             <div class="form-group col-lg-6">
                                 <label class="control-label">Author</label>
-                                <input id="author" type="text" name="author" class="form-control" required>
+                                <input id="author" type="text" name="author" class="form-control" required value="<?=$_SESSION['user'];?>">
                             </div>
                         </div>
                         <div class="row">
@@ -93,7 +100,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="post-card-body">
                     <div class="post-card-header">
                         <span class="wrap">
-                            <i class="fas fa-pen-square fa-3x"></i>
                             <!-- <i class="fas fa-image fa-3x"></i> -->
                         </span>
                     </div>
@@ -130,6 +136,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
 </div>
+</header> 
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

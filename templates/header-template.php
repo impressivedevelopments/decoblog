@@ -7,11 +7,11 @@
                         <i class="fas fa-bars"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#" class="dropdown-item">Action</a></li>
-                        <li><a href="#" class="dropdown-item">Another action</a></li>
-                        <li><a href="#" class="dropdown-item">Something else here</a></li>
+                        <li><a href="index.php" class="dropdown-item">Home</a></li>
+                        <li><a href="#" class="dropdown-item">About Us</a></li>
+                        <li><a href="#" class="dropdown-item">Contact Us</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#" class="dropdown-item">Separated link</a></li>
+                        <li><a href="admin.php" class="dropdown-item">Sign In</a></li>
                     </ul>
                 </div>
             </div>
