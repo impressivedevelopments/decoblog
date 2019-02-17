@@ -47,11 +47,51 @@ input::placeholder, button {
 
 /* SLIDER */
 .slider {
-    margin-top: -18.125rem;
-    z-index: 1;
-}
-.carousel-item {
-    height: 40rem;
+    max-height: 700px;
+    display: block;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin: -18.125rem auto 1rem;
+    z-index: 100;
+    .slide {
+        display: none;
+        position: relative;        
+        &-header {
+            display: block;
+        }
+    }
+    .active {
+        display: block;
+    }
+    &-navigation {
+        background: rgba(0, 0, 0, 0.5);
+        color: $white;
+        padding: 0 3.1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 199;
+        .controls {
+            padding: 16rem 1.3rem;
+        }
+        label {
+            background: $black;          
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            border: 1px solid $white;    
+            margin: 5px;            
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .current-indicator {   
+            background: $gray;           
+            border-color: $white;               
+        }
+    }
 }
 
 /* SIGN UP */

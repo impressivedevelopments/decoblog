@@ -73,12 +73,59 @@ input::placeholder, button {
 
 /* SLIDER */
 .slider {
-  margin-top: -18.125rem;
-  z-index: 1;
+  max-height: 700px;
+  display: block;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin: -18.125rem auto 1rem;
+  z-index: 100;
 }
 
-.carousel-item {
-  height: 40rem;
+.slider .slide {
+  display: none;
+  position: relative;
+}
+
+.slider .slide-header {
+  display: block;
+}
+
+.slider .active {
+  display: block;
+}
+
+.slider-navigation {
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 0 3.1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 199;
+}
+
+.slider-navigation .controls {
+  padding: 16rem 1.3rem;
+}
+
+.slider-navigation label {
+  background: #212121;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #ffffff;
+  margin: 5px;
+}
+
+.slider-navigation label:hover {
+  cursor: pointer;
+}
+
+.slider-navigation .current-indicator {
+  background: #65676a;
+  border-color: #ffffff;
 }
 
 /* SIGN UP */
