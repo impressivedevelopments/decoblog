@@ -7,27 +7,33 @@ $post = $posts->fetch_assoc();
 <div class="row">
     <div class="col-lg-9">
         <div class="post-card white">
-            <div class="post-card-image"> 
-                <img class="d-block w-100" src="images/banner.jpg" alt=""> 
-            </div>
+        <?php if($post['media'] != NULL): ?>
+                <div class="post-card-image"> 
+                    <img class="d-block w-100" src="<?= $post['media']; ?>" alt=""> 
+                </div>
+                <?php endif; ?>
             <div class="post-card-body">
                 <div class="post-card-header">
-                <span class="wrap">
-                    <i class="fas fa-image fa-3x"></i>
-                </span>
-            </div>
+                    <span class="wrap">
+                    <?php if($post['media'] != NULL): ?>
+                        <i class="fas fa-image fa-3x"></i>
+                    <?php else: ?>
+                        <i class="fas fa-pen-square fa-3x"></i>
+                    <?php endif; ?>
+                    </span>
+                </div>
                 <h6><?= $post['category']; ?></h6>
                 <h3><?= $post['title']; ?></h3>
                 <h6>
-                        <i class="fas fa-user"></i>
-                        <span class="author">
-                            <?= $post['author']; ?> 
-                        </span>
-                        <i class="far fa-calendar-alt"></i>
-                        <span>
-                            <?= date('F.d.Y'); ?>
-                        </span>
-                    </h6>
+                    <i class="fas fa-user"></i>
+                    <span class="author">
+                        <?= $post['author']; ?> 
+                    </span>
+                    <i class="far fa-calendar-alt"></i>
+                    <span>
+                        <?= date('F.d.Y'); ?>
+                    </span>
+                </h6>
                 <p><?= $post['description']; ?></p>
             </div>
             <div class="post-card-footer">

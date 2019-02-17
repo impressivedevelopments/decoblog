@@ -487,4 +487,65 @@ input::placeholder, button {
   text-align: center;
   margin: 2rem auto 3rem;
 }
+
+/* 404 */
+.error404 {
+  padding: 50px;
+  text-align: center;
+}
+
+.error404-header {
+  position: relative;
+}
+
+.error404-header .error {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 19rem;
+}
+
+.error404-header .over {
+  width: 100%;
+  background: #f1f1f1;
+  position: absolute;
+  bottom: 10.75rem;
+  letter-spacing: 0.9rem;
+  text-transform: uppercase;
+}
+
+.error404-body button {
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  background: #212121;
+  color: #ffffff;
+  border: none;
+  padding: 0px 50px;
+}
+
+.error404-footer {
+  margin-top: 2rem;
+}
+
+.error404-footer p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #b4b4b4;
+}
+
+.error404-footer a {
+  color: #212121;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.error404-footer a i {
+  padding-right: 10px;
+}
+
+.error404-footer a:hover {
+  text-decoration: none;
+  color: #212121;
+}
 /*# sourceMappingURL=style.css.map */

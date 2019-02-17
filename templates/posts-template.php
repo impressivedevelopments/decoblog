@@ -10,7 +10,7 @@ $posts = $con->query("SELECT * FROM posts");
         <?php foreach($posts as $post): ?>
         <div class="col-lg-3">
             <div class="post-card white">
-                <?php if($post['media'] != "NULL"): ?>
+                <?php if($post['media'] != NULL): ?>
                 <div class="post-card-image"> 
                     <img class="d-block w-100" src="<?= $post['media']; ?>" alt=""> 
                 </div>
@@ -18,7 +18,7 @@ $posts = $con->query("SELECT * FROM posts");
                 <div class="post-card-body">
                     <div class="post-card-header">
                         <span class="wrap">
-                        <?php if($post['media'] != "NULL"): ?>
+                        <?php if($post['media'] != NULL): ?>
                             <i class="fas fa-image fa-3x"></i>
                         <?php else: ?>
                             <i class="fas fa-pen-square fa-3x"></i>

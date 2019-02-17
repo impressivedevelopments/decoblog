@@ -395,3 +395,53 @@ input::placeholder, button {
     text-align: center;
     margin: 2rem auto 3rem;
 }
+
+/* 404 */
+.error404 {
+    padding: 50px;
+    text-align: center;
+    &-header {
+        position: relative;
+        .error {
+            @include montserrat-bold;
+            font-size: 19rem;
+        }
+        .over {
+            width: 100%;
+            background: #f1f1f1;
+            position: absolute;
+            bottom: 10.75rem;
+            letter-spacing: 0.9rem;
+            text-transform: uppercase; 
+        }
+    }
+    &-body {
+        button {
+            letter-spacing: 0.2rem;
+            font-size: 0.8rem;
+            background: $black;
+            color: $white;
+            border: none;
+            padding: 0px 50px;
+        }
+    }
+    &-footer {
+        margin-top: 2rem;
+        p {
+            @include montserrat-bold;
+            color: $gray-text;
+        }
+        a {
+            color: $black;
+            margin-left: 10px;
+            display: inline-block;
+        i {
+            padding-right: 10px;
+        }
+            &:hover {
+                text-decoration: none;
+                color:$black;
+            }
+        }
+    }
+}
