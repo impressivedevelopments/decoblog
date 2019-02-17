@@ -610,4 +610,33 @@ input::placeholder, button {
   text-decoration: none;
   color: #212121;
 }
+
+.error404 .input-group-text {
+  display: none;
+}
+
+@media (max-width: 770px) {
+  .error404 {
+    padding: 50px;
+    text-align: center;
+  }
+  .error404-header {
+    position: relative;
+  }
+  .error404-header .error {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 8rem;
+  }
+  .error404-header .over {
+    display: none;
+  }
+  .error404 .input-group-text {
+    display: block;
+  }
+  .error404-body button {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

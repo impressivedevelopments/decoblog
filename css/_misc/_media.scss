@@ -1,0 +1,26 @@
+@media (max-width: 770px)
+{
+    .error404 {
+        padding: 50px;
+        text-align: center;
+        &-header {
+            position: relative;
+            .error {
+                @include montserrat-bold;
+                font-size: 8rem;
+            }
+            .over {
+                display: none;
+            }
+        }
+        .input-group-text
+        {
+            display: block;
+        }
+    &-body {
+        button {
+            display: none;
+        }
+    }
+}
+}

@@ -492,4 +492,9 @@ input::placeholder, button {
             }
         }
     }
+    .input-group-text {
+        display: none;
+    }
 }
+
+@import '_misc/_media.scss';
