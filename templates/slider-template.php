@@ -4,24 +4,38 @@
             <div id="carousel-slider" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/banner.jpg" alt="Первый слайд">
+                        <img class=" w-100" src="images/st-petesburg.jpg" alt="Первый слайд">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Тупой</h2>
-                            <p>вот так вот сосок дырявый!</p>
+                            <h2>Санкт-Петербург</h2>
+                            <p>Важный экономический, научный и культурный центр России, крупный транспортный узел.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images/banner.jpg" alt="Второй слайд">
+                        <img class="d-block w-100" src="images/moscow.jpg" alt="Второй слайд">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Тупой</h2>
-                            <p>вот так вот сосок дырявый!</p>
+                            <h2>Москва</h2>
+                            <p>Дача Путина</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images/banner.jpg" alt="Третий слайд">
+                        <img class="d-block w-100" src="images/kazan.jpg" alt="Третий слайд">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Тупой</h2>
-                            <p>вот так вот сосок дырявый!</p>
+                            <h2>Казань</h2>
+                            <p>Просто красивый городок</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/amsterdam.jpg" alt="Третий слайд">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Амстердам</h2>
+                            <p>Чётко, внатуре классно</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/dallas.jpg" alt="Третий слайд">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Даллас</h2>
+                            <p>Город гангстеров</p>
                         </div>
                     </div>
                 </div>

@@ -39,6 +39,10 @@ input::placeholder, button {
 }
 
 /* HEADER */
+.header {
+  position: relative;
+}
+
 .header-top-menu {
   background: #212429;
   position: relative;
@@ -71,6 +75,10 @@ input::placeholder, button {
 .slider {
   margin-top: -18.125rem;
   z-index: 1;
+}
+
+.carousel-item {
+  height: 40rem;
 }
 
 /* SIGN UP */
@@ -370,8 +378,8 @@ input::placeholder, button {
 }
 
 .about-instagram .instagram-photo {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   background: #ffffff;
   height: 12.5rem;
 }
@@ -464,6 +472,12 @@ input::placeholder, button {
 }
 
 /* ADMIN PANEL 1*/
+.admin {
+  position: absolute;
+  top: 5rem;
+  bottom: 0;
+}
+
 .admin-form {
   width: 40rem;
   margin: 15rem auto;
@@ -482,6 +496,7 @@ input::placeholder, button {
 }
 
 .admin-header {
+  color: #ffffff;
   background: url("/images/pattern.png") center no-repeat cover;
   height: 100px;
   text-align: center;

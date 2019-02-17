@@ -1,4 +1,5 @@
 <?php 
+
 require_once "lib/db-connection.php";
 
 $email = $_POST['email'];
@@ -8,7 +9,10 @@ $users = $con->query("SELECT * FROM users WHERE email = '$email'");
 
 if($users->num_rows > 0) {
     $userData = $users->fetch_assoc();
-    if(($userData['password'] == $password) && ($userData['role'] == 1)) {
+    if(($userData['password'] == $password) && ($userData['role'] == 'admin')) {
+        session_start();
+        $_SESSION['role'] = $userData['role'];
+        $_SESSION['user'] = $userData['first_name'].' '.$userData['last_name'];
         header("location: admin-panel.php");
         exit();
     }
