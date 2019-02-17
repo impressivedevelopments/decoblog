@@ -378,8 +378,8 @@ input::placeholder, button {
 }
 
 .about-instagram .instagram-photo {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   background: #ffffff;
   height: 12.5rem;
 }
@@ -501,5 +501,77 @@ input::placeholder, button {
   height: 100px;
   text-align: center;
   margin: 2rem auto 3rem;
+}
+
+/* 404 PAGE*/
+.error-page {
+  height: 100vh;
+  text-align: center;
+}
+
+.error-page-header {
+  position: relative;
+}
+
+.error-page-header .error {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 19rem;
+}
+
+.error-page-header .over {
+  width: 100%;
+  background: #ffffff;
+  position: absolute;
+  bottom: 10.75rem;
+  letter-spacing: 0.9rem;
+  text-transform: uppercase;
+}
+
+.error-page-search input {
+  padding: 15px 30px;
+}
+
+.error-page-search button {
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  background: #212121;
+  color: #ffffff;
+  border: none;
+  padding: 0px 50px;
+}
+
+.error-page_sorry {
+  text-align: center;
+}
+
+.error-page_sorry h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+.error-page_sorry p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #b4b4b4;
+}
+
+.error-page_sorry a {
+  color: #212121;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.error-page_sorry a i {
+  padding-right: 10px;
+}
+
+.error-page_sorry a:hover {
+  text-decoration: none;
+  color: #212121;
 }
 /*# sourceMappingURL=style.css.map */

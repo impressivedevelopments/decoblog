@@ -8,7 +8,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="index.php" class="dropdown-item">Home</a></li>
-                        <li><a href="#" class="dropdown-item">About Us</a></li>
+                        <li><a href="dasda" class="dropdown-item">About Us</a></li>
                         <li><a href="#" class="dropdown-item">Contact Us</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="admin.php" class="dropdown-item">Sign In</a></li>
