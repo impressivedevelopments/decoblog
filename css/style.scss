@@ -63,6 +63,7 @@ input::placeholder, button {
     }
     .active {
         display: block;
+        animation: slider 5s ease .5s normal;
     }
     &-navigation {
         background: rgba(0, 0, 0, 0.5);
@@ -92,6 +93,14 @@ input::placeholder, button {
             border-color: $white;               
         }
     }
+}
+@keyframes slider-down{
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(800px); }
+}
+@keyframes slider-up{
+    0% { transform: translateY(800px); }
+    100% { transform: translateY(0px); }
 }
 
 /* SIGN UP */
