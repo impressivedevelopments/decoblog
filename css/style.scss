@@ -175,8 +175,6 @@ input::placeholder, button {
         p {
             padding: 0rem 2rem;
             margin-top: 2rem;
-            overflow: hidden;
-            height: 100px;
         }
         h3 {
             @include montserrat-bold;

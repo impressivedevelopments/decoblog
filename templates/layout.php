@@ -47,5 +47,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slider.js"></script>
 
+<?= $scripts; ?>
+
 </body>
 </html>
