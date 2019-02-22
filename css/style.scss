@@ -76,6 +76,10 @@ input::placeholder, button {
         z-index: 199;
         .controls {
             padding: 16rem 1.3rem;
+            #next, #prev {
+                padding: 0.5rem 0rem;
+                cursor: pointer;
+            }
         }
         label {
             background: $black;          
@@ -93,6 +97,7 @@ input::placeholder, button {
             border-color: $white;               
         }
     }
+    
 }
 @keyframes slider-down{
     0% { transform: translateY(0px); }

@@ -112,6 +112,11 @@ input::placeholder, button {
   padding: 16rem 1.3rem;
 }
 
+.slider-navigation .controls #next, .slider-navigation .controls #prev {
+  padding: 0.5rem 0rem;
+  cursor: pointer;
+}
+
 .slider-navigation label {
   background: #212121;
   display: block;
