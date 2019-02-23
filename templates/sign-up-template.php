@@ -5,12 +5,13 @@ if(isset($_POST['email'])) {
     $to = $_POST['email']; 
     // емайл получателя
 
-    $subject = "Проверка отправки писем"; 
+    $subject = "Young minds of Russia!"; 
     // тема письма 
 
-    $message = "Здравствуйте
-                Если вы читаете это письмо значит все ок
-                Почтовый робот"; 
+    $message = "Hello, this is the company Alexanders-Production,
+                If you are reading this letter means You are in large debts, congratulations to you!
+                You have 5 days to transfer money to our account, thanks for understanding, otherwise we will come to You
+                and we'll write nasty things in the Elevator! All the best and see you soon:)"; 
     // текст сообщения 
 
     $mailheaders = "Content-type:text/plain;charset=windows-1251rn"; 
