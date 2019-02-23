@@ -21,27 +21,27 @@
             <div class="col-lg-4 col-md-4 col-xs-4 text-right social-media">
                 <ul class="nav">
                     <li class="header-nav-item">
-                        <a href="">
+                        <a href="#">
                             <i class="fas fa-rss"></i>
                         </a>
                     </li>
                     <li class="header-nav-item">
-                        <a href="">
+                        <a href="https://twitter.com/">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>
                     <li class="header-nav-item">
-                        <a href="">
+                        <a href="https://www.tumblr.com/">
                             <i class="fab fa-tumblr"></i>
                         </a>
                     </li>
                     <li class="header-nav-item">
-                        <a href="">
+                        <a href="https://www.facebook.com/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                     <li class="header-nav-item">
-                        <a href="">
+                        <a href="#">
                             <i class="fas fa-search"></i>
                         </a>
                     </li>
