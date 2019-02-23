@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-xs-4 text-center logo-display">
-                <img src="images/logo.png" alt="logo" class="logo">
+               <a href="index.php"><img src="images/logo.png" alt="logo" class="logo"></a>
             </div>
             <div class="col-lg-4 col-md-4 col-xs-4 text-right social-media">
                 <ul class="nav">

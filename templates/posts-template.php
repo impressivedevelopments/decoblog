@@ -49,10 +49,18 @@ $posts = $con->query("SELECT * FROM posts");
                     </span>
                     <div class="social">
                         <span>
-                            <i class="fab fa-dribbble"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-pinterest"></i>
+                            <a href="https://dribbble.com/?/">
+                                <i class="fab fa-dribbble"></i>
+                            </a> 
+                            <a href="https://www.facebook.com/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a> 
+                            <a href="https://twitter.com/">
+                                <i class="fab fa-twitter"></i>
+                            </a> 
+                            <a href="https://www.pinterest.ru/">
+                                <i class="fab fa-pinterest"></i>
+                            </a> 
                         </span>
                     </div>
                 </div>
