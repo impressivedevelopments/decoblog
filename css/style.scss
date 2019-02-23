@@ -21,7 +21,7 @@ input::placeholder, button {
     &-top-menu {
         background: $background-color;
         position: relative;
-        height: 21.5rem;
+        min-height: 21.5rem;
         .fas, .fab {
             color: $white;
             border: {
@@ -66,24 +66,15 @@ input::placeholder, button {
         animation: slider 5s ease .5s normal;
     }
     &-navigation {
-        background: rgba(0, 0, 0, 0.5);
         color: $white;
-        padding: 0 3.1rem;
         position: absolute;
-        top: 0;
-        right: 0;
         bottom: 0;
+        left: 0;
+        right: 0;
         z-index: 199;
-        .controls {
-            padding: 16rem 1.3rem;
-            #next, #prev {
-                padding: 0.5rem 0rem;
-                cursor: pointer;
-            }
-        }
         label {
             background: $black;          
-            display: block;
+            display: inline-block;
             width: 1rem;
             height: 1rem;
             border: 1px solid $white;    
@@ -114,7 +105,7 @@ input::placeholder, button {
     padding: 2rem;
     h3 {
         @include montserrat-bold;
-        letter-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
         font-size: 1.25rem;
     }
     input {
@@ -139,6 +130,29 @@ input::placeholder, button {
             color: $black;
             border: 1px solid $black;
         }
+    }
+}
+.button-sign-up {
+    display: none;
+}
+.popup {
+    &-button {
+        margin-top: 5rem;
+    }
+    position: relative;
+    background: $white;
+    padding: 3rem;
+    border-radius: 1rem;
+    margin: 2.5rem auto;
+    &-close {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding-right: 1rem;
+    }
+    input {
+        margin-bottom: 1rem;
     }
 }
 

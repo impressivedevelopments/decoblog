@@ -15,10 +15,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 text-center">
+            <div class="col-lg-4 col-md-4 col-xs-4 text-center logo-display">
                 <img src="images/logo.png" alt="logo" class="logo">
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 text-right">
+            <div class="col-lg-4 col-md-4 col-xs-4 text-right social-media">
                 <ul class="nav">
                     <li class="header-nav-item">
                         <a href="">

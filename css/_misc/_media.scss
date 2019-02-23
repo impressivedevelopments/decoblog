@@ -23,4 +23,52 @@
         }
     }
    }
+   .header {
+    &-top-menu {
+        .logo-display {
+            display: none;
+            }
+        .social-media {
+            display: none;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 986px)
+{  
+    .sign-up {
+        display: none;
+    }
+    .button-sign-up
+    {
+        display: block;
+        margin: 2.5rem auto;
+        @include hind-medium;
+        font-size: 0.85rem;
+        background: $black;
+        color: $white;
+        padding: .6rem 1.75rem;
+        border: 1px solid transparent;
+        cursor: pointer;
+        &:hover {
+            background: $white;
+            transition: .5s ease;
+            color: $black;
+            border: 1px solid $black;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .slider { 
+        display: none;
+    }
+    .header-top-menu {
+        min-height: 10px;
+    }
+    .popup-button {
+        margin: 0;
+    }
 }

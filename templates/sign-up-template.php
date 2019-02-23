@@ -28,13 +28,30 @@ if(isset($_POST['email'])) {
 
 <form class="sign-up" action="" method="post">
     <div class="row">
-        <div class="col-lg-2 my-auto"><h3>Signup to <br> Newsletter</h3></div>
-        <div class="col-lg-4 my-auto">
+        <div class="col-lg-2 col-md-2 col-sm-2 my-auto"><h3>Signup to <br> Newsletter</h3></div>
+        <div class="col-lg-4 col-md-4 col-sm-4 my-auto">
             <input type="text" name="login" placeholder="YOUR NAME">
         </div>
-        <div class="col-lg-4 my-auto">
+        <div class="col-lg-4 col-md-4 col-sm-4 my-auto">
             <input type="e-mail" name="email" placeholder="YOUR E-MAIL ADRESS">
         </div>
-        <div class="col-lg-2 my-auto"><button class="btn-block">Subscibe now</button></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 my-auto"><button class="btn-block">Subscibe now</button></div>
     </div>
 </form>
+<div class="popup-button">
+    <button class="button-sign-up">Subscibe now</button>
+</div>
+
+<!-- POPUP MENU -->
+<div class="popup text-center hidden">
+    <div class="popup-close"><h2>&times;<h2></div>
+    <form class="popup-sign" action="" method="post">
+        <div class="popup-title"><h5>Signup to <br> Newsletter</h5></div>
+        <div class="popup-input">
+            <input type="text" name="login" placeholder="YOUR NAME">
+        </div>
+        <div class="popup-mail">
+            <input type="e-mail" name="email" placeholder="YOUR E-MAIL ADRESS">
+        </div>
+    </form>
+</div>

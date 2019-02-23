@@ -81,16 +81,16 @@ indicators.forEach(function(indicator, i) {
 //             // I need to try method some()
 //                 indicators.some()
 //         }
-//     });
+//     });  
 //     const currentIndicator = indicators.filter(function(indicator, i) {
-//         if (indicator.classList.contains("current-indicator")) {
+//         if (indicator.classList.contains("current-indicator")) { 
 //             indicator.classList.remove("current-indicator")
-//             const currentIndicator = indicator.nextElementSibling;
+//             const currentIndicator = indicator.nextElementSibling;  
 //             currentIndicator.classList.add("current-indicator");
-
-//             const currentSlide = slide[i].nextElementSibling;
-//             currentSlide.classList.add("active");
-//             return indicator;
-//         }
-//     });
+ 
+//             const currentSlide = slide[i].nextElementSibling; 
+//             currentSlide.classList.add("active"); 
+//             return indicator; 
+//         } 
+//     });  
 // });
