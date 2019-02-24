@@ -40,19 +40,26 @@ if(isset($_POST['email'])) {
     </div>
 </form>
 <div class="popup-button">
-    <button class="button-sign-up">Subscibe now</button>
+    <button class="button-sign-up" data-toggle="modal" data-target="#popup">Subscibe now</button>
 </div>
 
-<!-- POPUP MENU -->
-<div class="popup text-center hidden">
-    <div class="popup-close"><h2>&times;<h2></div>
+<!-- POPUP WINDOW -->
+<div class="modal" id="popup">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
     <form class="popup-sign" action="" method="post">
-        <div class="popup-title"><h5>Signup to <br> Newsletter</h5></div>
-        <div class="popup-input">
-            <input type="text" name="login" placeholder="YOUR NAME">
-        </div>
-        <div class="popup-mail">
-            <input type="e-mail" name="email" placeholder="YOUR E-MAIL ADRESS">
-        </div>
+        <h4 class="popup-title text-center">Signup to <br> Newsletter</h4>
+        <div class="popup-input text-center">
+                <input type="text" name="login" placeholder="YOUR NAME">
+            </div>
+            <div class="popup-mail text-center">
+                <input type="e-mail" name="email" placeholder="YOUR E-MAIL ADRESS">
+            </div>
+            <div class="popup-sub text-center"><button class="button-sign-up">Subscibe now</button></div>
     </form>
+    </div>
+  </div>
 </div>

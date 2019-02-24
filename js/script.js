@@ -7,15 +7,3 @@ descriptions.forEach(function(description) {
         description.textContent = str;
     }
 });
-
-const popup = document.querySelector('.popup'),
-      popupButton = document.querySelector('.popup-button'),
-      popupClose = document.querySelector('.popup-close');
-popupButton.addEventListener('click',function (){
-    if(popup.classList.contains("hidden")) {
-        popup.classList.remove('hidden');
-    }
-});
-popupClose.addEventListener('click', function() {
-        popup.classList.add('hidden');
-});

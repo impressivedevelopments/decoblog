@@ -217,12 +217,13 @@ input::placeholder, button {
   display: none;
 }
 
+/* POPUP WINDOW */
 .popup {
-  position: relative;
-  background: #ffffff;
-  padding: 3rem;
-  border-radius: 1rem;
-  margin: 2.5rem auto;
+  margin-bottom: 10px;
+}
+
+.popup-title {
+  margin-bottom: 1rem;
 }
 
 .popup-button {
@@ -237,7 +238,7 @@ input::placeholder, button {
   padding-right: 1rem;
 }
 
-.popup input {
+.popup-sign input {
   margin-bottom: 1rem;
 }
 

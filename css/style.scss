@@ -135,15 +135,16 @@ input::placeholder, button {
 .button-sign-up {
     display: none;
 }
+
+/* POPUP WINDOW */
 .popup {
+    margin-bottom: 10px;
+    &-title {
+        margin-bottom: 1rem;
+    }
     &-button {
         margin-top: 5rem;
     }
-    position: relative;
-    background: $white;
-    padding: 3rem;
-    border-radius: 1rem;
-    margin: 2.5rem auto;
     &-close {
         position: absolute;
         top: 0;
@@ -151,8 +152,10 @@ input::placeholder, button {
         right: 0;
         padding-right: 1rem;
     }
-    input {
-        margin-bottom: 1rem;
+    &-sign {
+        input {
+            margin-bottom: 1rem;
+        }
     }
 }
 
