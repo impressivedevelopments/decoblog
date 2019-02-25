@@ -72,3 +72,9 @@
         margin: 0;
     }
 }
+
+@media (max-width: 1250px) {
+    .last-post-img {
+        display: none;
+    }
+}

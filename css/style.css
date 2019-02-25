@@ -22,6 +22,11 @@ input::placeholder, button {
   text-transform: uppercase;
 }
 
+input:active, input:focus, input {
+  border: 1px solid transparent;
+  outline-color: #212121 !important;
+}
+
 /* Helper class */
 .grid {
   display: -ms-grid;
@@ -190,7 +195,6 @@ input::placeholder, button {
   font-size: 0.9rem;
   padding: .65rem 1.75rem;
   width: 100%;
-  outline-color: #212121;
 }
 
 .sign-up button {
@@ -217,12 +221,13 @@ input::placeholder, button {
   display: none;
 }
 
+/* POPUP WINDOW */
 .popup {
-  position: relative;
-  background: #ffffff;
-  padding: 3rem;
-  border-radius: 1rem;
-  margin: 2.5rem auto;
+  margin-bottom: 10px;
+}
+
+.popup-title {
+  margin-bottom: 1rem;
 }
 
 .popup-button {
@@ -237,7 +242,8 @@ input::placeholder, button {
   padding-right: 1rem;
 }
 
-.popup input {
+.popup-sign input {
+  padding: .5rem 1rem;
   margin-bottom: 1rem;
 }
 
@@ -402,10 +408,6 @@ input::placeholder, button {
   color: #ffffff;
 }
 
-.sidebar .input-group .form-control {
-  outline: transparent;
-}
-
 .sidebar input {
   font-family: 'Hind', sans-serif;
   font-weight: 300;
@@ -414,7 +416,6 @@ input::placeholder, button {
   font-size: 0.9rem;
   padding: .65rem 1.75rem;
   width: 100%;
-  outline-color: #212121;
   margin-bottom: 1rem;
 }
 
@@ -447,6 +448,7 @@ input::placeholder, button {
 }
 
 .sidebar .last-posts li {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -761,6 +763,12 @@ input::placeholder, button {
   }
   .popup-button {
     margin: 0;
+  }
+}
+
+@media (max-width: 1250px) {
+  .last-post-img {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

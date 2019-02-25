@@ -8,7 +8,7 @@ $posts = $con->query("SELECT * FROM posts");
     
     <div class="row">
         <?php foreach($posts as $post): ?>
-        <div class="col-lg-3">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <div class="post-card white">
                 <?php if($post['media'] != NULL): ?>
                 <div class="post-card-image"> 

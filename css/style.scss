@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, h6,
 input::placeholder, button {
     text-transform: uppercase;
 }
+input:active, input:focus, input {
+    border: 1px solid transparent;
+    outline-color: $black !important;
+}
 
 /* Helper class */
 
@@ -114,7 +118,6 @@ input::placeholder, button {
         font-size: 0.9rem;
         padding: .65rem 1.75rem;
         width: 100%;
-        outline-color: $black;
     }
     button {
         @include hind-medium;
@@ -135,15 +138,16 @@ input::placeholder, button {
 .button-sign-up {
     display: none;
 }
+
+/* POPUP WINDOW */
 .popup {
+    margin-bottom: 10px;
+    &-title {
+        margin-bottom: 1rem;
+    }
     &-button {
         margin-top: 5rem;
     }
-    position: relative;
-    background: $white;
-    padding: 3rem;
-    border-radius: 1rem;
-    margin: 2.5rem auto;
     &-close {
         position: absolute;
         top: 0;
@@ -151,8 +155,11 @@ input::placeholder, button {
         right: 0;
         padding-right: 1rem;
     }
-    input {
-        margin-bottom: 1rem;
+    &-sign {
+        input {
+            padding: .5rem 1rem;
+            margin-bottom: 1rem;
+        }
     }
 }
 
@@ -278,17 +285,13 @@ input::placeholder, button {
             background: $black;
             color: $white;
         }
-        .form-control {
-            outline: transparent;
-        }
     }
     input {
         @include hind-light;
-        border:$white;
+        border: $white;
         font-size: 0.9rem;
         padding: .65rem 1.75rem;
         width: 100%;
-        outline-color: $black;
         margin-bottom: 1rem;
     }    
     h4 {
@@ -316,6 +319,7 @@ input::placeholder, button {
     }
     .last-posts {
         li {
+            width: 100%;
             display: flex;
             padding: 1.5rem 0 .8rem 0;
             border: {
