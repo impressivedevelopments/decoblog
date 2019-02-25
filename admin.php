@@ -15,6 +15,8 @@ if($users->num_rows > 0) {
         $_SESSION['user'] = $userData['first_name'].' '.$userData['last_name'];
         header("location: admin-panel.php");
         exit();
+    } else {
+        header("location: admin.php");
     }
 }
 

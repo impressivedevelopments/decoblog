@@ -3,6 +3,9 @@ require_once "lib/db-connection.php";
 
 $posts = $con->query("SELECT * FROM posts where id = '{$_GET['id']}'");
 $post = $posts->fetch_assoc();
+
+$lasts_posts = $con->query("SELECT * FROM posts LIMIT 4");
+
 ?>
 <div class="row">
     <div class="col-lg-9">
@@ -76,53 +79,38 @@ $post = $posts->fetch_assoc();
             <img class="d-block w-100" src="images/banner-2.png">
             <h4>latest post</h4>
             <ul class="nav last-posts">
+                <?php foreach($lasts_posts as $last_post): ?>
                 <li>
                     <div class="last-post-img">
                         <img alt="img">
                     </div>
                     <div class="last-post-info">
-                        <h6>Journey towards a lifestyle</h6>
-                        <span><?= date('M.d.Y'); ?></span>
-                        <span>Like 255</span>
+                        <h6><?= $last_post['title']; ?></h6>
+                        <span><?= $last_post['date']; ?></span> <br/>
+                        <span><?= $last_post['likes']; ?> likes</span>
+                        <form method="POST" action="detail-page.php?id=<?= $last_post['id'] ?>">
+                            <button class="post-card-button change" name="id"><i class="fas fa-angle-double-right"></i></button>
+                        </form>
                     </div>                    
                 </li>
-                <li>
-                    <div class="last-post-img">
-                        <img alt="img">
-                    </div>
-                    <div class="last-post-info">
-                        <h6>Journey towards a lifestyle</h6>
-                        <span><?= date('M.d.Y'); ?></span>
-                        <span>Like 255</span>
-                    </div>                    
-                </li>
-                <li>
-                    <div class="last-post-img">
-                        <img alt="img">
-                    </div>
-                    <div class="last-post-info">
-                        <h6>Journey towards a lifestyle</h6>
-                        <span><?= date('M.d.Y'); ?></span>
-                        <span>Like 255</span>
-                    </div>                    
-                </li>
-                <li>
-                    <div class="last-post-img">
-                        <img alt="img">
-                    </div>
-                    <div class="last-post-info">
-                        <h6>Journey towards a lifestyle</h6>
-                        <span><?= date('M.d.Y'); ?></span>
-                        <span>Like 255</span>
-                    </div>                    
-                </li>
+                    
+                <?php endforeach;?>
+                
             </ul>
             <div class="sidebar-social">
                     <span class="flex">
-                    <i class="fab fa-dribbble"></i>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-pinterest"></i>
+                        <a href="https://dribbble.com/?/">
+                            <i class="fab fa-dribbble"></i>
+                        </a> 
+                        <a href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a> 
+                        <a href="https://twitter.com/">
+                            <i class="fab fa-twitter"></i>
+                        </a> 
+                        <a href="https://www.pinterest.ru/">
+                            <i class="fab fa-pinterest"></i>
+                        </a> 
                     </span>
             </div>
             <div class="sidebar-slider">
