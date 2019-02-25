@@ -12,6 +12,12 @@ input:active, input:focus, input {
     border: 1px solid transparent;
     outline-color: $black !important;
 }
+button:active, button:focus {
+    outline: 0 none !important;
+}
+a, a:hover {
+    text-decoration: none !important;
+}
 
 /* Helper class */
 
@@ -94,14 +100,6 @@ input:active, input:focus, input {
     }
     
 }
-@keyframes slider-down{
-    0% { transform: translateY(0px); }
-    100% { transform: translateY(800px); }
-}
-@keyframes slider-up{
-    0% { transform: translateY(800px); }
-    100% { transform: translateY(0px); }
-}
 
 /* SIGN UP */
 .sign-up {
@@ -169,7 +167,6 @@ input:active, input:focus, input {
     grid-gap: 1rem;
     margin-bottom: 4rem;
 }
-
 .post-card {
     margin-bottom: 2rem;
     &-image {
@@ -230,12 +227,8 @@ input:active, input:focus, input {
         margin-top: 2.5rem;
         padding: .2rem 1rem;
         background: transparent;
-        border: {
-            top:none;
-            right:1px solid $light-gray-text;
-            bottom:none;
-            left:1px solid $light-gray-text;
-        }
+        border:none;
+        border-color: $light-gray-text;
         &:hover {
             cursor: pointer;     
         }
@@ -248,11 +241,10 @@ input:active, input:focus, input {
 }
 .social {
     a {
-        text-decoration: none;
         color: $black;
         &:hover {
-            text-decoration: none;
             color:darken($light-gray, 60%);
+            transition: .5s ease;
         }
     }
 }
@@ -319,11 +311,18 @@ input:active, input:focus, input {
     }
     .last-posts {
         li {
+            position: relative;
             width: 100%;
             display: flex;
             padding: 1.5rem 0 .8rem 0;
             border: {
                 top: 1px solid $light-gray-text;
+            }
+            .change {
+                position: absolute;
+                top: 0;
+                bottom: 1.5rem;
+                right: 0;
             }
         }
         .last-post-img {
@@ -341,6 +340,13 @@ input:active, input:focus, input {
         margin: 2rem 0rem;
         span {
             justify-content: space-around;
+            a { 
+                color: $black; 
+                &:hover {
+                    color:darken($light-gray, 60%);
+                    transition: .5s ease;
+                }
+            }
         }
     }
     &-slider {
@@ -449,14 +455,12 @@ input:active, input:focus, input {
     color: $footer-text; 
     text-transform: uppercase; 
     a {
-        text-decoration: none;
         color: $footer-text;
         margin: {
             left: 0.6rem;
             right: 0.6rem;
         }
     &:hover {
-        text-decoration: none;
         color: $white;
         }
     }
@@ -527,11 +531,10 @@ input:active, input:focus, input {
             color: $black;
             margin-left: 10px;
             display: inline-block;
-        i {
-            padding-right: 10px;
-        }
+            i {
+                padding-right: 10px;
+            }
             &:hover {
-                text-decoration: none;
                 color:$black;
             }
         }

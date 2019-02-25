@@ -34,12 +34,12 @@ $posts = $con->query("SELECT * FROM posts");
                         </span>
                         <i class="far fa-calendar-alt"></i>
                         <span>
-                            <?= date('F.d.Y'); ?>
+                            <?= $post['date']; ?>
                         </span>
                     </h6>
                     <p><?= $post['description']; ?></p>
                     <form method="POST" action="detail-page.php?id=<?=$post['id']?>">
-                        <button class="post-card-button" name="id">Read More</button>
+                        <button class="post-card-button border-left border-right" name="id">Read More</button>
                     </form>
                 </div>
                 <div class="post-card-footer">

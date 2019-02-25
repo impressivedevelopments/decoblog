@@ -2,7 +2,7 @@
 require_once "lib/db-connection.php";
 require_once "lib/template.php";
 session_start();
-if ($_SESSION['login'] != 'admin')
+if ($_SESSION['role'] != 'admin')
 {
     header("location: index.php");
 }
@@ -11,15 +11,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title = $_POST['title'];
     $author = $_POST['author'];
     $description = $_POST['description'];
-    $date = date("Y-m-d H:i:s");
-
+    $date = date("F.d.Y");
     $result = $con->query("INSERT INTO posts (category, title, author, description, date) 
                             values('$category', '$title', '$author', '$description', '$date')");
 
     header("location: admin-panel.php");
     exit();
 };
-
 ?>
 <!doctype html>
 <html lang="en">
@@ -90,8 +88,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                 </form>
             </div>
-        </div>
-    
+        </div>   
         <div class="col-lg-4 offset-1 ">
             <div class="post-card white">
                 <div class="post-card-image hidden"> 
@@ -100,7 +97,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="post-card-body">
                     <div class="post-card-header">
                         <span class="wrap">
-                            <!-- <i class="fas fa-image fa-3x"></i> -->
                         </span>
                     </div>
                     <h6 class="category">Category</h6>
@@ -137,7 +133,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 </header> 
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

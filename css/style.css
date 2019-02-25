@@ -27,6 +27,14 @@ input:active, input:focus, input {
   outline-color: #212121 !important;
 }
 
+button:active, button:focus {
+  outline: 0 none !important;
+}
+
+a, a:hover {
+  text-decoration: none !important;
+}
+
 /* Helper class */
 .grid {
   display: -ms-grid;
@@ -127,50 +135,6 @@ input:active, input:focus, input {
 .slider-navigation .current-indicator {
   background: #65676a;
   border-color: #ffffff;
-}
-
-@-webkit-keyframes slider-down {
-  0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  100% {
-    -webkit-transform: translateY(800px);
-            transform: translateY(800px);
-  }
-}
-
-@keyframes slider-down {
-  0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  100% {
-    -webkit-transform: translateY(800px);
-            transform: translateY(800px);
-  }
-}
-
-@-webkit-keyframes slider-up {
-  0% {
-    -webkit-transform: translateY(800px);
-            transform: translateY(800px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes slider-up {
-  0% {
-    -webkit-transform: translateY(800px);
-            transform: translateY(800px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
 }
 
 /* SIGN UP */
@@ -346,10 +310,8 @@ input:active, input:focus, input {
   margin-top: 2.5rem;
   padding: .2rem 1rem;
   background: transparent;
-  border-top: none;
-  border-right: 1px solid #d7d7d7;
-  border-bottom: none;
-  border-left: 1px solid #d7d7d7;
+  border: none;
+  border-color: #d7d7d7;
 }
 
 .post-card-button:hover {
@@ -364,13 +326,13 @@ input:active, input:focus, input {
 }
 
 .social a {
-  text-decoration: none;
   color: #212121;
 }
 
 .social a:hover {
-  text-decoration: none;
   color: #585858;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .white {
@@ -448,12 +410,20 @@ input:active, input:focus, input {
 }
 
 .sidebar .last-posts li {
+  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1.5rem 0 .8rem 0;
   border-top: 1px solid #d7d7d7;
+}
+
+.sidebar .last-posts li .change {
+  position: absolute;
+  top: 0;
+  bottom: 1.5rem;
+  right: 0;
 }
 
 .sidebar .last-posts .last-post-img {
@@ -477,6 +447,16 @@ input:active, input:focus, input {
 .sidebar-social span {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.sidebar-social span a {
+  color: #212121;
+}
+
+.sidebar-social span a:hover {
+  color: #585858;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .sidebar-slider {
@@ -589,14 +569,12 @@ input:active, input:focus, input {
 }
 
 .footer a {
-  text-decoration: none;
   color: #858687;
   margin-left: 0.6rem;
   margin-right: 0.6rem;
 }
 
 .footer a:hover {
-  text-decoration: none;
   color: #ffffff;
 }
 
@@ -689,7 +667,6 @@ input:active, input:focus, input {
 }
 
 .error404-footer a:hover {
-  text-decoration: none;
   color: #212121;
 }
 
